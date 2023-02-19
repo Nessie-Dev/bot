@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Sans-Serif;
+  box-sizing: border-box;
+}
+/*===================== background ======================*/
+.hero{
+  background: white;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  transition: background 0.5s;
+}
+
+/*====================== Navigation Bar ========================*/
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+  background: #efefef;
+  transition: background 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+  
+}
+/*======================== logo ============================*/
+nav .logo{
+  max-height: 50px;
+  max-width: 50px;
+  margin-right 20px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 0px black)
+                  drop-shadow(-1px -1px 0 black);
+  
+  
+}
+/*========================== navigation links ========================*/
+nav ul {
+  flex: 1;
+  text-align: right;
+  color: #1d2026;
+  transition: color 0.5s;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+/*======================= Dark mode/ white mode toggler button ==========================*/
+button{
+  background: #1d2026;
+  height: 30px;
+  width:60px;
+  border-radius: 20px;
+  border:0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+button span{
+  display: block;
+  background: #fff;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+  transition: background 0.5s , margin 0.5s;
+  
+}
+.active{
+  background: #efefef;
+}
+.active span{
+  background: #999;
+  margin-left: 32px;
+}
+.dark{
+  background: #1d2026;
+}
+.text-dark{
+  color: white;
+}
+.nav-dark{
+  background: #1d2026;
+  box-shadow: none;
+}
+nav .menu-icons{
+  display: none;
+  
+}
+@media(max-width:980px) {
+  nav ul{
+    display: none;
+  }
+  button{
+    margin-left: 360px;
+  }
+}
